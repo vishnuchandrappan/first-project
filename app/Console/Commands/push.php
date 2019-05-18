@@ -38,12 +38,10 @@ class push extends Command
     public function handle()
     {
         exec("git add .", $output);
-        $this->comment( implode( PHP_EOL, $output ) );
+        // $this->comment( implode( PHP_EOL, $output ) );
         $temp = "git commit -m ".$this->argument('commit_name');
         exec($temp);
-        $this->comment( implode( PHP_EOL, $output ) );
         exec("git push", $output);
-        $this->comment( implode( PHP_EOL, $output ) );
 
     }
 }
