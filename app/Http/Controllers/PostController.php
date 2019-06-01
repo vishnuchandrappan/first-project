@@ -3,12 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Post;
 class PostController extends Controller{
 
   public function index(){
-    $posts = App\Post::get();
-    return $posts;
+    $posts = Post::get();
+    return view('pages.index');
   }
 
 }
