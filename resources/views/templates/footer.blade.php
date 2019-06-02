@@ -4,7 +4,7 @@
       <div class="col-md-4">
         <h3>About Us</h3>
         <p class="mb-4">
-          <img src="images/img_1.jpg" alt="Image placeholder" class="img-fluid">
+          <img src="/images/img_1.jpg" alt="Image placeholder" class="img-fluid">
         </p>
 
         <p>Lorem ipsum dolor sit amet sa ksal sk sa, consectetur adipisicing elit. Ipsa harum inventore reiciendis. <a href="#">Read More</a></p>
@@ -17,7 +17,7 @@
               <ul>
                 <li>
                   <a href="">
-                    <img src="images/img_6.jpg" alt="Image placeholder" class="mr-4">
+                    <img src="/images/img_6.jpg" alt="Image placeholder" class="mr-4">
                     <div class="text">
                       <h4>How to Find the Video Games of Your Youth</h4>
                       <div class="post-meta">
@@ -29,7 +29,7 @@
                 </li>
                 <li>
                   <a href="">
-                    <img src="images/img_3.jpg" alt="Image placeholder" class="mr-4">
+                    <img src="/images/img_3.jpg" alt="Image placeholder" class="mr-4">
                     <div class="text">
                       <h4>How to Find the Video Games of Your Youth</h4>
                       <div class="post-meta">
@@ -41,7 +41,7 @@
                 </li>
                 <li>
                   <a href="">
-                    <img src="images/img_4.jpg" alt="Image placeholder" class="mr-4">
+                    <img src="/images/img_4.jpg" alt="Image placeholder" class="mr-4">
                     <div class="text">
                       <h4>How to Find the Video Games of Your Youth</h4>
                       <div class="post-meta">

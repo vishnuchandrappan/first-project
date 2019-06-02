@@ -8,7 +8,7 @@ use App\Post;
 class PostController extends Controller{
 
   public function index(){
-    $posts = Post::get();
+    $posts = Post::latest()->get();
     return view('welcome',compact('posts'));
   }
 
@@ -33,5 +33,18 @@ class PostController extends Controller{
     return redirect('/');
   }
 
+  // public function show(){
+  //   $post = POST::find(request('id'));
+  //   return view('pages.post',compact('post'));
+  // }
+
+  // public function show($id){
+  //   $post = POST::find($id);
+  //   return view('pages.post',compact('post'));
+  // }
+
+  public function show(Post $post){  //Route model Binding
+    return view('pages.post',compact('post'));
+  }
 
 }
