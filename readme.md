@@ -8,4 +8,4 @@
 * Make sure that the database is already created. Btw, I'm using MySQL.
 * Run the Migrations. ``php artisan migrate``
 * You're ready to go Live, use ``php artisan serve``
-* Go to localhost:3000 from any browser
+* Go to localhost:8000 from any browser

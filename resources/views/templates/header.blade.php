@@ -23,7 +23,7 @@
     <div class="row pt-5">
       <div class="col-12 text-center">
         <a class="absolute-toggle d-block d-md-none" data-toggle="collapse" href="#navbarMenu" role="button" aria-expanded="false" aria-controls="navbarMenu"><span class="burger-lines"></span></a>
-        <h1 class="site-logo"><a href="index.html">Blog</a></h1>
+        <h1 class="site-logo"><a href="index.html">Blog and Beyond</a></h1>
       </div>
     </div>
   </div>
@@ -66,6 +66,14 @@
           <li class="nav-item">
             <a class="nav-link" href="/contact">Contact</a>
           </li>
+          @if( Auth::check() )
+            <li class="nav-item ml-auto">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </li>
+            <li class="nav-item ml-auto">
+              <a class="nav-link" href="/profile"> {{ Auth::user()->name }}</a>
+            </li>
+          @endif
         </ul>
 
       </div>

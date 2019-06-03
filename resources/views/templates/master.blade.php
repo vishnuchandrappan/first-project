@@ -49,7 +49,7 @@
     <script src="/js/jquery.waypoints.min.js"></script>
     <script src="/js/jquery.stellar.min.js"></script>
 
-
     <script src="/js/main.js"></script>
+    @yield('sub-content')
   </body>
 </html>

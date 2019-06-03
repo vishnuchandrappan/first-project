@@ -8,6 +8,10 @@ use App\Comment;
 
 class PostController extends Controller{
 
+  public function __construct(){
+    $this->middleware('auth')->except(['index','show']);
+  }
+
   public function index(){
     $posts = Post::latest()->get();
     return view('welcome',compact('posts'));
@@ -26,10 +30,13 @@ class PostController extends Controller{
       'body'  => 'required'
     ]);
 
-    Post::create([
-      'title' => request('title'),
-      'body'  => request('body')
-    ]);
+    auth()->user()->publish(new Post(request(['title','body'])));
+
+    // Post::create([
+    //   'title' => request('title'),
+    //   'body'  => request('body'),
+    //   'user_id' => auth()->id()
+    // ]);
 
     return redirect('/');
   }
